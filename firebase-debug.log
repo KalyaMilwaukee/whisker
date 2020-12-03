@@ -1,0 +1,139 @@
+[debug] [2020-12-03T09:16:00.946Z] ----------------------------------------------------------------------
+[debug] [2020-12-03T09:16:00.949Z] Command:       C:\Program Files\nodejs\node.exe U:\Projets\React\whisker\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-03T09:16:00.949Z] CLI Version:   8.17.0
+[debug] [2020-12-03T09:16:00.949Z] Platform:      win32
+[debug] [2020-12-03T09:16:00.949Z] Node Version:  v12.18.1
+[debug] [2020-12-03T09:16:00.952Z] Time:          Thu Dec 03 2020 10:16:00 GMT+0100 (GMT+01:00)
+[debug] [2020-12-03T09:16:00.952Z] ----------------------------------------------------------------------
+[debug] [2020-12-03T09:16:00.952Z] 
+[debug] [2020-12-03T09:16:01.003Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-03T09:16:01.005Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  U:\Projets\React\whisker
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using whisker-8917e. 
+[debug] [2020-12-03T09:18:05.078Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/whisker-8917e  
+ 
+[debug] [2020-12-03T09:18:05.323Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Dec 2020 09:18:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-12-03T09:18:15.673Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-12-03T09:18:15.717Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Thu, 03 Dec 2020 08:45:03 GMT","expires":"Thu, 03 Dec 2020 09:35:03 GMT","last-modified":"Fri, 20 Nov 2020 01:53:31 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"1992","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at U:\Projets\React\whisker 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=364429261&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-12-03T09:18:18.227Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"1bf86e98bb40aa337e07","redirect_uri":"http://localhost:9005","state":"364429261"}
+[debug] [2020-12-03T09:18:18.443Z] <<< HTTP RESPONSE 200 {"date":"Thu, 03 Dec 2020 09:18:18 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"2905b1b346111d23ca453c33ba4faf12\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"A775:DD52:ABFA4B:EFF532:5FC8AD5A"}
+[debug] [2020-12-03T09:18:18.444Z] >>> HTTP REQUEST GET https://api.github.com/user  
+ 
+[debug] [2020-12-03T09:18:18.678Z] <<< HTTP RESPONSE 200 {"date":"Thu, 03 Dec 2020 09:18:18 GMT","content-type":"application/json; charset=utf-8","content-length":"1445","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"ca20fec83d231d85cb9d5d0e622730aa5c2a94478cb1ceef2afd6b5b14d66ed3\"","last-modified":"Thu, 03 Dec 2020 08:51:57 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4993","x-ratelimit-reset":"1606989446","x-ratelimit-used":"7","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"0B58:2D58:5BDAD2:6950EB:5FC8AD5A"}
+[info] 
+[info] +  Success! Logged into GitHub as KalyaMilwaukee 
+[info] 
+[debug] [2020-12-03T09:18:28.144Z] >>> HTTP REQUEST GET https://api.github.com/repos/KalyaMilwaukee/whisker/actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-12-03T09:18:28.347Z] <<< HTTP RESPONSE 200 {"date":"Thu, 03 Dec 2020 09:18:28 GMT","content-type":"application/json; charset=utf-8","content-length":"84","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"acbfc003e2da6b2a35c7df7dc09318ea6addf8d3a4b5b72215435e0ed40d3114\"","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4992","x-ratelimit-reset":"1606989446","x-ratelimit-used":"8","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"AE72:5B05:AFC962:CA9DCC:5FC8AD64"}
+[debug] [2020-12-03T09:18:28.349Z] >>> HTTP REQUEST GET https://api.github.com/repos/KalyaMilwaukee/whisker  
+ 
+[debug] [2020-12-03T09:18:28.561Z] <<< HTTP RESPONSE 200 {"date":"Thu, 03 Dec 2020 09:18:28 GMT","content-type":"application/json; charset=utf-8","content-length":"5216","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"fb5a11d02ba36d4b79b5125cc29302d0b8a48e8d0a9ee7b37b3a0d9bc19a542b\"","last-modified":"Thu, 03 Dec 2020 09:06:21 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4991","x-ratelimit-reset":"1606989446","x-ratelimit-used":"9","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"82F0:06F5:B468D0:CF7322:5FC8AD64"}
+[debug] [2020-12-03T09:18:28.563Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/whisker-8917e/serviceAccounts  
+ {"accountId":"github-action-318134272","serviceAccount":{"displayName":"GitHub Actions (KalyaMilwaukee/whisker)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository KalyaMilwaukee/whisker"}}
+[debug] [2020-12-03T09:18:29.421Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Thu, 03 Dec 2020 09:18:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-03T09:18:29.421Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Service account github-action-318134272 already exists within project projects/whisker-8917e.","status":"ALREADY_EXISTS","details":[{"@type":"type.googleapis.com/google.rpc.ResourceInfo","resourceName":"projects/whisker-8917e/serviceAccounts/github-action-318134272@whisker-8917e.iam.gserviceaccount.com"}]}}
+[debug] [2020-12-03T09:18:29.423Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/whisker-8917e/serviceAccounts/github-action-318134272@whisker-8917e.iam.gserviceaccount.com  
+ 
+[debug] [2020-12-03T09:18:29.423Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/whisker-8917e:getIamPolicy  
+ 
+[debug] [2020-12-03T09:18:30.211Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Dec 2020 09:18:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-03T09:18:30.324Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Dec 2020 09:18:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=714","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-03T09:18:30.325Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/whisker-8917e:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwW1i7F5Mzk=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-2u5rb@whisker-8917e.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-318134272@whisker-8917e.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-318134272@whisker-8917e.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-69159517311@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-2u5rb@whisker-8917e.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:svslither@gmail.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-318134272@whisker-8917e.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-318134272@whisker-8917e.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2020-12-03T09:18:31.463Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Dec 2020 09:18:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1099","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-03T09:18:31.464Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/whisker-8917e/serviceAccounts/github-action-318134272@whisker-8917e.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2020-12-03T09:18:32.701Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Dec 2020 09:18:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-318134272 with Firebase Hosting admin permissions. 
+[debug] [2020-12-03T09:18:32.743Z] >>> HTTP REQUEST PUT https://api.github.com/repos/KalyaMilwaukee/whisker/actions/secrets/FIREBASE_SERVICE_ACCOUNT_WHISKER_8917E  
+ {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2020-12-03T09:18:33.057Z] <<< HTTP RESPONSE 204 {"date":"Thu, 03 Dec 2020 09:18:33 GMT","server":"GitHub.com","status":"204 No Content","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4990","x-ratelimit-reset":"1606989446","x-ratelimit-used":"10","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","x-github-request-id":"2362:59AB:CE496E:EAF226:5FC8AD68"}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_WHISKER_8917E. 
+[info] i  You can manage your secrets at https://github.com/KalyaMilwaukee/whisker/settings/secrets. 
+[info] 
+[info] 
+[info] +  Created workflow file U:\Projets\React\whisker\.github/workflows/firebase-hosting-pull-request.yml 
+[debug] [2020-12-03T09:29:10.936Z] ----------------------------------------------------------------------
+[debug] [2020-12-03T09:29:10.938Z] Command:       C:\Program Files\nodejs\node.exe U:\Projets\React\whisker\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-03T09:29:10.939Z] CLI Version:   8.17.0
+[debug] [2020-12-03T09:29:10.939Z] Platform:      win32
+[debug] [2020-12-03T09:29:10.939Z] Node Version:  v12.18.1
+[debug] [2020-12-03T09:29:10.942Z] Time:          Thu Dec 03 2020 10:29:10 GMT+0100 (GMT+01:00)
+[debug] [2020-12-03T09:29:10.942Z] ----------------------------------------------------------------------
+[debug] [2020-12-03T09:29:10.942Z] 
+[debug] [2020-12-03T09:29:10.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-03T09:29:10.981Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  U:\Projets\React\whisker
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using whisker-8917e. 
+[debug] [2020-12-03T09:29:17.997Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/whisker-8917e  
+ 
+[debug] [2020-12-03T09:29:18.236Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Dec 2020 09:29:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
